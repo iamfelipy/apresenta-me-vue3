@@ -1,29 +1,39 @@
-# vue-project
+# Descrição do desafio Apresenta.me
 
-This template should help get you started developing with Vue 3 in Vite.
+Criar um projeto com Laravel e Vue.js, para cadastro, alteração, exclusão e visualização de pessoas.
 
-## Recommended IDE Setup
+Então precisaria ter que fazer login com um user e depois esse user pode realizar a manutenção de pessoas.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [x] &nbsp;Login
+- [x] &nbsp;Listagem
+- [x] &nbsp;Cadastro
+- [x] &nbsp;Alteração
+- [x] &nbsp;Exclusão
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## 💻 Pré-requisitos
 
-## Project Setup
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-```sh
+
+- [x] &nbsp;[Back-end para SPA](https://code.visualstudio.com/)
+- [x] &nbsp;node v16.15.0
+- [x] &nbsp;npm 8.5.5
+
+
+## 🚀 Inicializando o projeto 
+
+Para usar, siga estas etapas:
+
+1 Executar migrations
+```
+// instalar dependencias
+
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
+2 Executar o projeto emHot-Reload para desenvolvimento
+```
 npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
