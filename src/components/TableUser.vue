@@ -167,7 +167,7 @@
           password: `${formState.password}`,
         };
 
-        await axios.post(`http://127.0.0.1:8000/api/save`,{...newData}).then(response => {
+        await axios.post(`https://apresentaoteste.shop/api/save`,{...newData}).then(response => {
           const data = response?.data?.hasOwnProperty('id') ? {...response?.data} : [] ;
 
           dataSource.value.push({
@@ -238,7 +238,7 @@
       const saveEdit = async (key: string) => {        
         const userEdit = editableData[key];
 
-        await axios.put(`http://127.0.0.1:8000/api/update/${userEdit.key}`,{
+        await axios.put(`https://apresentaoteste.shop/api/update/${userEdit.key}`,{
           name: userEdit.name,
           cpf: userEdit.cpf,
           type: userEdit.type,
@@ -257,7 +257,7 @@
       };
       const onDelete = async (key: string) => {
 
-        await axios.delete(`http://127.0.0.1:8000/api/delete/${key}`).then(response => {  
+        await axios.delete(`https://apresentaoteste.shop/api/delete/${key}`).then(response => {  
           dataSource.value = dataSource.value.filter(item => item.key !== key);
         }).finally(() => {
           
@@ -266,7 +266,7 @@
       };
       async function getUsers() {
         // loading.value = true;
-        await axios.get("http://127.0.0.1:8000/api/user").then(response => {
+        await axios.get("https://apresentaoteste.shop/api/user").then(response => {
           const data = response?.data?.length > 0 ? [...response.data] : [] ;
 
           // cpf: "15423642588"

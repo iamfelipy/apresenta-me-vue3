@@ -106,7 +106,7 @@ export default defineComponent({
 
     async function login() {
         
-        await axios.post("http://127.0.0.1:8000/api/login",{
+        await axios.post("https://apresentaoteste.shop/api/login",{
           email: formState.email,
           password: formState.password
         }).then(response => { 
@@ -156,7 +156,7 @@ export default defineComponent({
         password: `${formStateCadastro.password}`,
       };
       
-      await axios.post(`http://127.0.0.1:8000/api/register`,{...newData}).then(response => {
+      await axios.post(`https://apresentaoteste.shop/api/register`,{...newData}).then(response => {
         const data = response?.data?.hasOwnProperty('id') ? {...response?.data} : [] ;
         router.push({name: 'dashboard'})
         visible.value = false;
