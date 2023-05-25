@@ -231,5 +231,15 @@ export default defineComponent({
     justify-content: center;
     align-items: center;
     height: 100vh;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  .login .ant-form.ant-form-horizontal {
+    width: 300px !important;
+  }
+  .login .ant-col.ant-col-16.ant-col-offset-8.ant-form-item-control {
+    width: 100px !important;
+    max-width: 100px;
   }
 </style>
